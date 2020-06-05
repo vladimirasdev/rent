@@ -1,0 +1,226 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+:root {
+    --primary-color: #212529;
+    /*--active-color: #FFF;*/
+    --active-color: #dc3545;
+}
+html, body {
+    color: var(--primary-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+html {
+    scroll-behavior: smooth;
+}
+content {
+    flex: 1;
+    margin-top: 3.5rem;
+    background-color: #f8f9fa;
+}
+footer {
+    box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.8);
+    color: #6b757c;
+    z-index: 1;
+}
+.footer-links {
+    font-size: 1.5em;
+}
+.footer-copy {
+    font-size: 0.7em;
+}
+#nav {
+    box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.1);
+}
+.active {
+    color: var(--active-color)!important;
+    background-color: #f8f9faf7;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+}
+.navbar-nav .active > .nav-link {
+    color: var(--active-color)!important;
+    padding-left: 1rem;
+}
+.navbar-nav .nav-link:hover {
+    padding-left: 1rem;
+    color: #FFF!important;
+    margin-right: -1rem;
+    background-color: #f8f9fa26;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+}
+.dropdown-menu {
+    margin-top: 0;
+}
+.navbar-brand {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    transition: color .25s ease-in-out;
+}
+.navbar-brand:hover {
+    color: var(--active-color)!important;
+}
+.select-none {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+}
+.fa-linkedin,
+.fa-codepen,
+.fa-github {
+    transition: color 0.25s ease-in-out;
+}
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+.fa-codepen:hover,
+.fa-github:hover {
+    color: #FFFFFF;
+}
+#search-input {
+    width: 0rem;
+    border-style: hidden;
+    background: none;
+    transition: all 0.3s ease-in-out;
+}
+#search-wrapper:hover #search-input,
+#search-wrapper #search-input:focus  {
+    background: #FFF;
+    width: 15rem;
+    margin-right: -35px;
+    padding-right: 35px;
+    border-style: solid;
+    outline: none;
+    box-shadow: none;
+}
+.bg-darker {
+    background-color: #161616!important;
+}
+.text-grey {
+    color: #8391a2;
+}
+.sidebar {
+    position: fixed;
+    margin-top: 3.5rem;
+    font-size: 1.1rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+.sidebar-sticky {
+    position: sticky;
+    margin-top: -3.5rem;
+    padding: 0.5rem 1rem;
+}
+.sidebar-sticky .nav-item a:hover {
+    color: #FFF;
+    background-color: #f8f9fa26;
+    margin-right: -1rem;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+}
+.sidebar-sticky .nav-item svg {
+    margin: 0 10px 0 0;
+}
+.sidebar-sticky .active {
+    margin-right: -1rem;
+}
+#status .active {
+    color: #FFF!important;
+}
+.btn-group-toggle .active {
+    color: #FFF!important;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    /* minmax(300px, 1fr)*/
+    grid-gap: 30px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-items: start;
+}
+div.chartWrapper {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+}
+div.chartContainer {
+    position: relative;
+    height: 400px;
+}
+.table-hover tbody tr:hover {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* checkbox-rect */
+.checkbox-rect input[type="checkbox"] {
+    display: none;
+  }
+  .checkbox-rect input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font: 14px/20px "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  .checkbox-rect input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+  }
+  .checkbox-rect input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #343a3f;
+    border-radius: 0.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: #f3f3f3;
+  }
+  .checkbox-rect input[type="checkbox"]:checked + label:before {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 0.2em;
+    border: 2px solid #fff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: #50565a;
+    box-shadow: 0 0 0 1px #000;
+  }
+  /* checkbox-rect end */
